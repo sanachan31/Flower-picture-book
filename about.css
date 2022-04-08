@@ -177,8 +177,7 @@ h1, h2, h3 {
 .title a:hover {
   opacity: 0.5;
 }
-    padding: 310px 0 200px 0;
-    .title p {
+.title p {
   font-family: "Shippori Mincho";
   margin-left: 50px;
 }
@@ -482,7 +481,6 @@ h1, h2, h3 {
   #footer {
     height: 120px;
   }
-
   .title a {
     font-size: 18px;
   }
