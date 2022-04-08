@@ -1,0 +1,511 @@
+@charset "utf-8";
+
+/* ===全体  Flower picture book  About==== */
+/* #region top */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  color: #707070;
+  font-size: 1.25rem;
+  font-family: "Sacramento", "Shippori Mincho", serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #707070;
+}
+img {
+  max-width: 100%;
+}
+ul,li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.section_title {
+  display: block;
+  font-size: 5rem;
+  padding: 0 0 150px 0;
+  text-align: center;
+}
+/* #endregion top */
+/* =====ヘッダー========================== */
+/* #region */
+#header {
+  font-size: 3.125rem;
+  background-color: rgba(255 ,255, 241, 0.8);
+  width: 100vw;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.site_title {
+  font-size: 2.1vw;
+  white-space: nowrap;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site_title a {
+  display: block;
+}
+.site_title img {
+  width: 2.5vw;
+  height: auto;
+  margin-left: 1.3vw;
+}
+.site_title:hover,
+#header li a:hover {
+  opacity: 0.5;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 1.7vw;
+  margin: 0 20px;
+}
+.nav_sp {
+  display: none;
+}
+/* #endregion top */
+/* =====アバウト============================= */
+/* #region */
+/* #region */
+#about {
+  background-color: #ECF3F2;
+  padding: 420px 0 300px 0;
+}
+.section_title_outer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.section_title_outer .left2 {
+  width: 160px;
+  height: 179px;
+  margin-right: 50px;
+  transform: translateY(-20px);
+}
+.section_title_outer .right2 {
+  width: 120px;
+  height: 160px;
+  margin-left: 60px;
+  transform: translateY(-20px);
+}
+/* #endregion top */
+/* -----自己紹介  PC------ */
+/* #region */
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro_text {
+  font-family: "Shippori Mincho";
+  font-size: 1.25rem;
+  text-align: justify;
+  width: 440px;
+  margin-left: 5.25vw;
+}
+.inner1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.inner1 p {
+  font-size: 40px;
+}
+.inner1 img {
+  transform: translateY(0.5vw);
+}
+.inner2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.inner2 a:hover {
+  opacity: 0.5;
+}
+.inner2 .intro_insta img {
+  width: 58px;
+  height: 58px;
+}
+.intro_flower2 {
+  transform: translateY(-20px);
+}
+/* #endregion */
+/* #endregion */
+/* =====フッター=========================== */
+/* #region */
+/* #region */
+#footer {
+  background-color: #E2D2BC;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.title a {
+  font-size: 2.1vw;
+  display: block;
+}
+.title a:hover {
+  opacity: 0.5;
+}
+    padding: 310px 0 200px 0;
+    .title p {
+  font-family: "Shippori Mincho";
+  margin-left: 50px;
+}
+/* #endregion top */
+/* ------花イラスト------ */
+/* #region */
+.title .left4 {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: -110px;
+  left: -150px;
+  z-index: 90;
+}
+.title .right4 {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: -130px;
+  z-index: 90;
+}
+/* #endregion */
+/* #endregion */
+/*======PC  ↑===============================*/
+.wrap {
+  overflow: hidden;
+}
+/*======================================
+    スマホ  SP1
+=======================================*/
+@media screen and (max-width: 768px) {
+
+  .section_title {
+    font-size: 3rem;
+    padding: 0 0 100px 0;
+  }
+/* =====ヘッダー SP1========================== */
+/* #region */
+  #header {
+    padding: 0 8vw;
+  }
+  .site_title {
+    font-size: 30px;
+  }
+  .site_title img {
+    width: 30px;
+  }
+
+/* #endregion */
+/* =====アバウト SP1========================== */
+/* #region */
+/* #region */
+  #about {
+    padding: 310px 0 200px 0;
+  }
+  .section_title_outer .left2 {
+    width: 9vw;
+    height: 10vw;
+    margin-right: 30px;
+    transform: translateY(-10px);
+  }
+  .section_title_outer .right2 {
+    width: 7vw;
+    height: 9vw;
+    margin-left: 40px;
+    transform: translateY(-7px);
+  }
+/* #endregion */
+/* -----自己紹介 SP1------ */
+/* #region */
+  .introduction {
+    flex-direction: column;
+  }
+  .inner1 img {
+    width: 70px;
+    transform: translateY(0.5vw);
+  }
+  .intro_text {
+    margin: 5vw 0 0 15px;
+    width: 390px;
+  }
+  .inner1 p {
+    margin-bottom: 20px;
+  }
+  .intro_insta {
+    width: 50px;
+    height: 50px;
+  }
+  .intro_flower2 {
+    width: 115px;
+  }
+/* #endregion */
+/* =====フッター SP1============================= */
+/* #region */
+/* #region */
+  #footer {
+    height: 150px;
+  }
+  .title {
+    display: block;
+  }
+  .title a {
+    font-size: 30px;
+  }
+  .title p {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+/* #endregion top */
+/* ------花イラスト------ */
+/* #region */
+  .title .left4 {
+    width: 74px;
+    top: -70px;
+    left: -80px;
+  }
+  .title .right4 {
+    width: 50px;
+    top: 10px;
+    right: -80px;
+  }
+/* #endregion */
+/* #endregion */
+/*======SP1  ↑===============================*/ 
+  .wrap {
+    overflow: hidden;
+  }
+}
+
+/*======================================
+    スマホ  SP2
+=======================================*/
+@media screen and (max-width: 540px) {
+
+  .section_title {
+    font-size: 10vw;
+    padding: 0 0 60px 0;
+  }
+/* =====ヘッダー SP2========================== */
+/* #region */
+/* #region */
+  #header {
+    height: 80px;
+    padding: 0 0 0 9vw;
+  }
+  .site_title {
+    font-size: 20px;
+  }
+/* #endregion top */
+/* ------ハンバーガーメニューSP2------ */
+/* #region */
+  .nav_list_pc {
+    display: none;
+  }
+  .nav_sp {
+    display: block;
+  }
+  .hamburger {
+    width: 10vw;
+    height: 80px;
+    margin: 0 9vw 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity:1; 
+    position: fixed;
+    top: 0; 
+    right: 0;
+    z-index: 100;
+  }
+  .hamburger:hover {
+    opacity: 0.5;
+  }
+  .hamburger_menu {
+    width: 10vw;  /*----a要素(押せる)範囲----*/
+    height: 10vw;
+  }
+  .hamburger_menu div {
+    width: 10vw;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #707070;
+    margin: 5px 0;
+  }
+  .hamburger + .sidenavs:target {
+    overflow-x: visible;
+    width: 250px;  /* サイドメニューの幅 */
+    display:block;
+  }
+/* #endregion top */
+/* ------ナビゲーション------ */
+/* #region */
+  .sidenavs:target {
+    overflow-x: hidden;
+    width: 0;
+  }
+  .sidenavs {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #F7F1D3;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1.5s;
+  }
+  .sidenavs a { 
+    font-size: 25px;
+    color: #707070;
+    display: block;
+    transition: 1.5s;
+  }
+  .sidenavs a:hover {
+    opacity: white;
+  }
+  .nav_list_sp {
+    margin: 50px auto 30px auto;
+    width: 180px;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_list_sp a {
+    padding: 8px 8px;
+    background: #fffff1;
+    box-shadow: -2px -2px 5px rgba(112,112, 112, 0.1) inset;
+    border-radius: 50px; 
+    text-align: center;
+  }
+  #header .nav_list_sp li {
+    display: block;
+    margin: 10px 5px;
+  }
+/*------クローズボタン------*/
+  .sidenavs .close-btn {
+    position: absolute; 
+    top: 50px;
+    right: 25px;
+    font-size: 50px; /*---✕の大きさ---*/
+    margin-left: 50px;
+  }
+  .sidenavs .close-btn img {
+    width: 50px;
+  }
+/* #endregion */
+/* #endregion */
+/* =====アバウト  SP2============================= */
+/* #region */
+/* #region */
+  #about {
+    padding: 200px 0 140px 0;
+  }
+  .section_title_outer .left2 {
+    width: 18vw;
+    height: 19vw;
+    margin-right: 20px;
+    transform: translateY(-0.8vw);
+  }
+  .section_title_outer .right2 {
+    width: 14vw;
+    height: 16vw;
+    margin: 0 20px;
+    transform: translateY(-0.1vw);
+  }
+/* #endregion */
+/* -----自己紹介  SP2------ */
+/* #region */
+  .intro_portrait {
+    width: 80vw;
+  }
+  .intro_text {
+    font-size: 16px;
+    width: 80vw;
+    margin: 5vw 0 0 0;
+  }
+  .inner1 p {
+    font-size: 30px;
+  }
+  .inner1 img {
+    width: 60px;
+    transform: translateY(1vw);
+  }
+  #about .intro_insta {
+    width: 40px;
+    height: 40px;
+  }
+  #about .intro_flower2 {
+    width: 96px;
+
+  }
+/* #endregion */
+/* #endregion */
+/* =====フッター SP2============================= */
+/* #region */
+/* #region */
+  #footer {
+    height: 120px;
+  }
+
+  .title a {
+    font-size: 18px;
+  }
+  .title p {
+    font-size: 14px;
+  }
+/* #endregion top */
+/* ------花イラスト------ */
+/* #region */
+  .title .left4 {
+    width: 15vw;
+    top: -15vw;
+    left: -20vw;
+  }
+  .title .right4 {
+    width: 9vw;
+    top: 30%;
+    right: -20vw;
+  }
+/* #endregion */
+/* #endregion */
+/*======SP2  ↑===============================*/ 
+  .wrap {
+    overflow: hidden;
+  }
+}
